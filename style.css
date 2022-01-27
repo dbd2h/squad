@@ -1,0 +1,224 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.red {
+  background-color: red;
+}
+.orange {
+  background-color: orange;
+}
+.yellow {
+  background-color: yellow;
+}
+.green {
+  background-color: green;
+}
+.skyBlue {
+  background-color: skyblue;
+}
+.blue {
+  background-color: blue;
+}
+.purple {
+  background-color: purple;
+}
+.pink {
+  background-color: rgb(225, 8, 147);
+}
+.brown {
+  background-color: brown;
+}
+.black {
+  background-color: black;
+}
+.hidden {
+  display: none;
+}
+
+/*
+    header시작 부분
+*/
+
+header {
+  width: 100vw;
+  height: 100px;
+  margin-top: 50px;
+  margin-bottom: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header > span {
+  font-size: 50px;
+}
+
+/*
+    중간 시작 부분
+*/
+
+.main {
+  width: 100vw;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 100;
+}
+.box {
+  height: 200px;
+  width: 400px;
+  border: solid black;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 10;
+  box-sizing: content-box;
+  background-color: white;
+}
+.cover {
+  height: 100px;
+  width: 400px;
+  background-color: white;
+  position: absolute;
+  top: -100px;
+  border-bottom: solid black;
+}
+@keyframes move {
+  35% {
+    transform: translateY(118.4px);
+  }
+  100% {
+    transform: translateY(195px) translateX(160px) rotateZ(360deg);
+  }
+}
+.ball {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 45px;
+  position: absolute;
+  top: -100px;
+  z-index: -1;
+  animation: move 1.2s ease-in forwards;
+  font-weight: 600;
+  border: black 1px solid;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
+.road {
+  height: 100px;
+  width: 400px;
+  position: absolute;
+  bottom: 0;
+}
+.tri {
+  width: 200px;
+  height: 100px;
+  border-top: 95px solid transparent;
+  border-left: 200px solid green;
+  position: absolute;
+}
+.plane {
+  height: 100px;
+  width: 200px;
+  border-bottom: 5px solid green;
+  position: absolute;
+  right: 0;
+}
+.first-page > footer {
+  width: 100vw;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.first-page > footer > div {
+  height: 60px;
+  width: 300px;
+  font-size: 23px;
+  transition: all 0.2s ease-in-out;
+  background-color: blue;
+  color: white;
+  font-weight: 600;
+  border: solid 2px black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.first-page > footer > div:hover {
+  background-color: rgb(0, 0, 201);
+}
+
+/*
+  두번째 페이지
+*/
+
+.result__main {
+  display: flex;
+  justify-content: center;
+  height: 300px;
+  width: 100vw;
+}
+.result__ball-box {
+  width: 30vw;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.result_ball {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 70px;
+  font-weight: 600;
+  border: black 2px solid;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black;
+}
+.result_sum {
+  height: 200px;
+  width: 100vw;
+  display: flex;
+  font-size: 50px;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+}
+.result-page > footer {
+  width: 100vw;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.result-page > footer > div {
+  height: 60px;
+  width: 300px;
+  font-size: 23px;
+  transition: all 0.2s ease-in-out;
+  background-color: blue;
+  color: white;
+  font-weight: 600;
+  border: solid 2px black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.result-page > footer > div:hover {
+  background-color: rgb(0, 0, 201);
+}
