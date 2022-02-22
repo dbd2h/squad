@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="css/index.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="login">
+      <a href="login.html">LOGIN</a>
+      <div class="hidden">
+        <img />
+        <div class="hidden">
+          <a href="profile.html">Profile</a>
+          <span>LOGOUT</span>
+        </div>
+      </div>
+    </div>
+    <div class="main">
+      <h2>게시판</h2>
+      <table class="main__table">
+        <thead>
+          <tr>
+            <th>글쓴이</th>
+            <th>제목</th>
+            <th>작성일</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+    <button>글 작성</button>
+
+    <div class="write-space hidden">
+      <div>
+        <span>x</span>
+      </div>
+      <form>
+        <input type="text" placeholder="title" required />
+        <textarea type="text" placeholder="content" required></textarea>
+        <button>upload</button>
+      </form>
+    </div>
+    <script src="js/index.js"></script>
+  </body>
+</html>

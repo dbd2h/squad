@@ -1,0 +1,49 @@
+@import "all.css";
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  display: flex;
+  width: 90%;
+  justify-content: flex-end;
+  font-size: 36px;
+}
+
+.title {
+  width: 90%;
+  text-align: center;
+  font-size: 35px;
+}
+.nickName {
+  display: flex;
+  width: 60%;
+}
+.nickName > div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.nickName > div > img {
+  width: 60px;
+  height: 60px;
+  border-radius: 12px;
+  border: solid 0.5px;
+}
+.nickName > div > span {
+  font-size: 30px;
+}
+.content {
+  width: 90%;
+}
+.content > textarea {
+  width: 100%;
+  height: 500px;
+  font-size: 20px;
+  font-weight: 600;
+  resize: none;
+}

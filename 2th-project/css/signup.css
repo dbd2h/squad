@@ -1,0 +1,95 @@
+@import "all.css";
+.login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Heebo", sans-serif;
+}
+.status-bar {
+  background-color: white;
+}
+.login-title {
+  height: 50px;
+  width: 390px;
+  margin-top: 85px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.login-title__bigtext {
+  font-size: 25px;
+  font-weight: bold;
+  color: cornflowerblue;
+}
+.login-input {
+  width: 470px;
+  height: 376px;
+  margin-top: 76px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+input[type="text"] {
+  border: none;
+  height: 73px;
+  width: 470px;
+  border-bottom: solid 2px;
+  border-color: rgb(0, 0, 0, 0.14);
+  transition: border-color 0.3s ease-in-out;
+}
+input[type="text"]::placeholder {
+  font-size: 22px;
+  opacity: 0.5;
+  font-weight: 500;
+}
+.login-input__id {
+  border: none;
+  height: 73px;
+  width: 470px;
+  border-bottom: solid 2px;
+  border-color: rgb(0, 0, 0, 0.14);
+  transition: border-color 0.3s ease-in-out;
+}
+.login-input__id::placeholder {
+  font-size: 22px;
+  opacity: 0.5;
+  font-weight: 500;
+}
+input:focus {
+  outline: none;
+  border-color: cornflowerblue;
+  text-shadow: 0 0 0 black;
+}
+input[type="password"] {
+  border: none;
+  height: 73px;
+  width: 470px;
+  border-bottom: solid 2px;
+  border-color: rgb(0, 0, 0, 0.14);
+  transition: border-color 0.3s ease-in-out;
+}
+input[type="password"]::placeholder {
+  font-size: 22px;
+  opacity: 0.5;
+  font-weight: 500;
+}
+.login-input__error {
+  color: red;
+}
+.login-input__signup {
+  border: none;
+  height: 60px;
+  width: 470px;
+  margin-top: 16px;
+  font-size: 19px;
+  font-weight: 600;
+  opacity: 0.8;
+  cursor: pointer;
+  border-radius: 8px;
+  background-color: cornflowerblue;
+  color: white;
+  transition: background-color 0.3s ease-in-out;
+}
+.login-input__signup:hover {
+  background-color: var(--blue);
+}

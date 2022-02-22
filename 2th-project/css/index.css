@@ -1,0 +1,148 @@
+@import "all.css";
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 1000vh;
+}
+.login {
+  width: 90%;
+  height: 200px;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+}
+.login > a {
+  display: flex;
+  color: black;
+  text-decoration-line: none;
+  height: 35px;
+  width: 60px;
+  border-radius: 17.5px;
+  justify-content: center;
+  align-items: center;
+}
+.login > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100px;
+}
+.login > div > img {
+  height: 50px;
+  width: 50px;
+  border-radius: 10px;
+  margin-bottom: 5px;
+  border: solid 0.5px;
+}
+.login > div > div {
+  height: 90px;
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0.5px 0.5px 1px 1px rgb(233, 233, 233);
+}
+.login > div > div > a,
+.login > div > div > span {
+  height: 35px;
+  width: 100px;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration-line: none;
+  font-size: 18px;
+  opacity: 0.9;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.login > div > div > a:hover,
+.login > div > div > span:hover {
+  background-color: rgb(240, 240, 240);
+}
+
+.hidden {
+  display: none !important;
+}
+
+.write-space {
+  position: fixed;
+  top: 10vh;
+  width: 80vw;
+  height: 80vh;
+  border: solid;
+  background-color: white;
+}
+.write-space > div {
+  width: 98%;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 40px;
+}
+.write-space > div > span {
+  cursor: pointer;
+}
+.write-space > form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.write-space > form > input {
+  border: none;
+  border-bottom: 1px solid;
+  margin: 30px 0;
+  width: 90%;
+  font-size: 23px;
+}
+.write-space > form > textarea {
+  width: 90%;
+  height: 50vh;
+  font-size: 20px;
+  font-weight: 600;
+  resize: none;
+}
+
+.write-space > form > button {
+  margin-top: 20px;
+  height: 50px;
+  width: 100px;
+  background-color: cornflowerblue;
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main > .main__table {
+  width: 90vw;
+  border: solid 0.5px;
+  border-collapse: collapse;
+  margin-bottom: 40px;
+}
+.main > .main__table > tbody > tr > td,
+.main > .main__table > thead > tr > th {
+  border: solid 0.5px;
+  text-align: center;
+  width: 33.33%;
+}
+.main > .main__table > tbody > tr > td:nth-child(2) > span {
+  cursor: pointer;
+}
+.main > .main__table > tbody > tr > td > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main > .main__table > tbody > tr > td > div > img {
+  width: 30px;
+  height: 30px;
+  border-radius: 6px;
+}

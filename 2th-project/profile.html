@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="css/profile.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      <span>Profile</span>
+    </div>
+    <div>
+      <img
+        src="https://user-images.githubusercontent.com/11402468/58876263-7ee5fa80-8708-11e9-8eb7-b5ef5f2966d0.jpeg"
+      />
+      <input type="file" id="myFileInput" accept=".png, .jpg, .jpeg" />
+      <span></span>
+      <div>
+        <input name="color" type="checkbox" onclick="checkOnlyOne(this)" /><span
+          >황토색</span
+        >
+        <input name="color" type="checkbox" onclick="checkOnlyOne(this)" /><span
+          >초록색</span
+        >
+        <input name="color" type="checkbox" onclick="checkOnlyOne(this)" />
+        <span>빨간색</span>
+      </div>
+    </div>
+    <div>
+      <div class="profile-button">Profile Save</div>
+    </div>
+
+    <script src="js/profile.js"></script>
+  </body>
+</html>

@@ -1,0 +1,57 @@
+@import "all.css";
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+div {
+  margin-bottom: 20px;
+}
+body > div:first-child > span {
+  font-size: 26px;
+}
+body > div:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body > div:nth-child(2) > span {
+  font-size: 20px;
+}
+img {
+  width: 300px;
+  height: 300px;
+  border-radius: 60px;
+  border: solid;
+}
+
+body > div:nth-child(2) > div > span:nth-child(2) {
+  color: var(--ocher);
+}
+body > div:nth-child(2) > div > span:nth-child(4) {
+  color: green;
+}
+body > div:nth-child(2) > div > span:nth-child(6) {
+  color: red;
+}
+
+.profile-button {
+  border: none;
+  height: 60px;
+  width: 300px;
+  margin-top: 16px;
+  font-size: 21px;
+  font-weight: 600;
+  opacity: 0.8;
+  cursor: pointer;
+  border-radius: 8px;
+  background-color: cornflowerblue;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s ease-in-out;
+}
+.profile-button:hover {
+  background-color: var(--blue);
+}
