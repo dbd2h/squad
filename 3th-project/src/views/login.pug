@@ -1,0 +1,16 @@
+extends baseLog.pug
+
+block style
+    include ../css/login.css
+
+block main 
+    form(method="POST")
+        input(name="loginID",type="text",placeholder="ID")
+        input(name="loginPW",type="text",placeholder="Password")
+        input(type="submit",value="Login")
+    div
+        small If you don`t have your account:  
+        button Signup
+
+block script
+    include ../js/login.js

@@ -1,0 +1,9 @@
+extends baseLog.pug
+
+block main 
+    form(method="POST")
+        input(name="nickname", type="text", required, placeholder="Nickname")
+        input(name="loginID", type="text",required, placeholder="Input ID")
+        input(name="loginPW",type="password",required,placeholder="Input PW")
+        input(name="loginPWAgain", type="password",required,placeholder="Input PW Again")
+        input(type="submit", value="Signup")

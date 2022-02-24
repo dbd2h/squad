@@ -1,0 +1,7 @@
+mixin post(info)
+    tr 
+        td 
+            a(href=`/user/${info.posterId}`)=info.poster
+        td 
+            a(href=`/post/${info._id}`)=info.title
+        td=info.createdAt

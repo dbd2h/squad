@@ -1,0 +1,7 @@
+extends base
+
+block main 
+    h2 Title: #{post.title}
+    a(href=`/user/${post.posterId}`)=post.poster
+    p=post.content
+    a(href=`${post.id}/delete`) Delete Post &rarr;

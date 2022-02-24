@@ -1,0 +1,21 @@
+extends base.pug
+include mixins/post
+
+block style
+    include ../css/home.css
+
+block main
+    table 
+        thead
+            tr
+                th 글쓴이
+                th 제목
+                th 작성일
+        tbody 
+            if loggedIn
+                each post in posts
+                    +post(post)
+    button 글쓰기
+
+block script
+    include ../js/home.js

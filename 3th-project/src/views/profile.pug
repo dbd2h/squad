@@ -1,0 +1,17 @@
+extends base
+include mixins/chat
+
+block style
+    include ../css/profile.css
+
+block main 
+    div #{user.nickname}, ID: #{user.loginID}
+    if (user._id == loggedInUser._id)
+        a(href="logout") Logout
+    else
+        form.messageBox(method="POST")
+            div
+                each chat in data
+                    +chat(chat,loggedInUser._id)
+            input(name="content",type="text")
+            input(type="submit",value="전송")

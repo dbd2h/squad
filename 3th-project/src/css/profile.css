@@ -1,0 +1,49 @@
+.messageBox {
+  margin-top: 10px;
+  height: 500px;
+  width: 300px;
+  position: relative;
+}
+.messageBox > div {
+  border: solid;
+  box-sizing: border-box;
+  height: 460px;
+  overflow: scroll;
+  -ms-overflow-style: none;
+  display: block;
+}
+.messageBox > div::-webkit-scrollbar {
+  display: none;
+}
+.messageBox > input[type="text"] {
+  position: absolute;
+  bottom: 0;
+  width: 60%;
+}
+.messageBox > input[type="submit"] {
+  position: absolute;
+  bottom: 0;
+  right: 1.5rem;
+}
+.messageBox > div > .mine {
+  padding: 10px;
+  width: 100%;
+  height: auto;
+  word-break: break-all;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: flex-end;
+}
+.messageBox > div > .mine > div {
+  width: 150px;
+  text-align: end;
+}
+.messageBox > div > .other {
+  padding: 10px;
+  width: 100%;
+  height: auto;
+  word-break: break-all;
+}
+.messageBox > div > .other > div {
+  width: 150px;
+}

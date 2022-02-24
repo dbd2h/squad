@@ -1,0 +1,8 @@
+mixin chat(info, id)
+    if info.id !== "test"
+        if info.id == id
+            div.mine
+                div #{info.content}
+        else
+            div.other 
+                div #{info.content}

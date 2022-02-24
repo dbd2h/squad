@@ -1,0 +1,21 @@
+doctype html 
+html(lang="ko")
+    head 
+        title #{pageTitle}
+        link(rel="stylesheet" href="https://unpkg.com/mvp.css")
+        style
+            include ../css/base.css
+            block style
+    body 
+        header
+            a(href="/") Home
+            div.profile
+                if !loggedIn
+                    a(href="/login") login
+                else 
+                    a(href=`/user/${loggedInUser._id}`) #{loggedInUser.nickname}
+        main    
+            block main
+        script 
+            block script
+

@@ -1,0 +1,13 @@
+div {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+div > small {
+  width: auto;
+  margin-right: 10px;
+}
+div > button {
+  padding: 5px;
+  font-size: 15px;
+}

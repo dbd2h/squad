@@ -1,0 +1,16 @@
+doctype html 
+html(lang="ko")
+    head 
+        title #{pageTitle}
+        link(rel="stylesheet" href="https://unpkg.com/mvp.css")
+        style
+            block style
+    body 
+        header
+            h1=pageTitle 
+        main 
+            if errorMessage
+                span=errorMessage
+            block main
+        script 
+            block script

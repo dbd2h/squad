@@ -1,0 +1,10 @@
+extends base
+
+block style 
+    include ../css/post.css
+
+block main 
+    form(method="POST")
+        input(name="title",placeholder="Input Title", required, type="text")
+        textarea(name="content" type="text", required) 
+        input(type="submit",value="업로드")
