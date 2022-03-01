@@ -1,11 +1,10 @@
 import express, { application } from "express";
 import morgan from "morgan";
 import session from "express-session";
-import globalRouter from "./routers/globalRouter";
-import userRouter from "./routers/userRouter";
-import postRouter from "./routers/postRouter";
-import res from "express/lib/response";
-import { localsMiddleware } from "./middlewares";
+import globalRouter from "./routers/globalRouter.js";
+import userRouter from "./routers/userRouter.js";
+import postRouter from "./routers/postRouter.js";
+import { localsMiddleware } from "./middlewares.js";
 
 const app = express();
 const logger = morgan("dev");

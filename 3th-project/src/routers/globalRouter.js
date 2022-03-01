@@ -1,11 +1,11 @@
 import express from "express";
-import { home } from "../controllers/postController";
+import { home } from "../controllers/postController.js";
 import {
   getLogin,
   postLogin,
   getSignup,
   postSignup,
-} from "../controllers/userController";
+} from "../controllers/userController.js";
 
 const globalRouter = express.Router();
 
