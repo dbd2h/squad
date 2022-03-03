@@ -1,5 +1,9 @@
 import express from "express";
-import { getProfile, logout, postProfile } from "../controllers/userController";
+import {
+  getProfile,
+  logout,
+  postProfile,
+} from "../controllers/userController.js";
 
 const userRouter = express.Router();
 

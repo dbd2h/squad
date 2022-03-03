@@ -1,5 +1,5 @@
-import "./db";
-import app from "./server";
+import "./db.js";
+import app from "./server.js";
 
 const PORT = 4002;
 
