@@ -38,5 +38,10 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: 2px 2px 3px 3px rgb(0, 0, 0);
+}
+
+@keyframes buttonRipple {
+  from {
+    transform: scale(1);
+  }
 }
