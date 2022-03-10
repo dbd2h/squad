@@ -1,0 +1,15 @@
+body {
+  margin: 0;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+}
+header > div:first-child > a {
+}
+header > div:first-child > a > span {
+  display: block;
+  height: 44px;
+  width: 44px;
+  margin: 8px;
+}
